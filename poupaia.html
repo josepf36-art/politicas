@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PoupaIA — Modo de funcionamento e Política de Privacidade</title>
+<style>
+ body{font-family:system-ui,Segoe UI,Arial,sans-serif;max-width:760px;margin:0 auto;padding:24px;line-height:1.6;color:#1a2a22;background:#f4f9f6}
+ h1{color:#1b8a5a} h2{margin-top:28px;color:#14623f} li{margin:6px 0}
+ .box{background:#e1efe7;border-radius:10px;padding:14px 18px}
+</style>
+</head>
+<body>
+<h1>PoupaIA</h1>
+<p><strong>Modo de funcionamento e Política de Privacidade</strong></p>
+<p>Versão 1 · atualizado a 22 de novembro de 2026</p>
+<div class="box"><strong>Em resumo:</strong> os seus dados financeiros ficam apenas no seu telemóvel. Não há conta, não há servidores e não há publicidade.</div>
+
+<h2>Como funciona</h2>
+<div class="box"><strong>Modo atual: local e offline.</strong> Tudo acontece no seu telemóvel, sem Internet e sem conta.</div>
+<ul>
+ <li><strong>Novo:</strong> registe uma despesa ou receita em poucos segundos.</li>
+ <li><strong>Ler QR da fatura:</strong> com a câmara, lê o QR code fiscal das faturas portuguesas e preenche o valor, a data e o NIF. A app lembra o nome e a categoria de cada loja para as próximas vezes.</li>
+ <li><strong>Início:</strong> saldo do mês, categorias, metas e movimentos. Pode editar ou apagar cada movimento.</li>
+ <li><strong>Relatórios:</strong> gráfico por categoria e evolução dos últimos 6 meses.</li>
+ <li><strong>Assistente (opcional):</strong> responde a perguntas sobre as suas despesas. Funciona no telemóvel, sem Internet, e só responde ao que consegue calcular.</li>
+ <li><strong>Orçamentos e registos recorrentes:</strong> limites por categoria com aviso, e registos automáticos mensais (renda, salário, subscrições).</li>
+ <li><strong>Despesas para o IRS:</strong> total por ano e categoria das despesas marcadas, com o NIF de cada uma.</li>
+ <li><strong>Subscrições e débitos:</strong> deteta despesas que se repetem todos os meses e avisa do próximo débito.</li>
+ <li><strong>Gastos por loja:</strong> totais por loja, a partir das faturas lidas por QR.</li>
+ <li><strong>Partilha com a família:</strong> manual, pelo WhatsApp ou outra app à sua escolha. Não há cloud.</li>
+ <li><strong>PIN (opcional):</strong> bloqueia a app ao abrir e depois de 30 segundos fora dela.</li>
+ <li><strong>Cópia de segurança:</strong> manual. Cria o ficheiro poupaia_backup.json e guarda-o onde quiser (Drive, OneDrive, e-mail). Para recuperar ou mudar de telemóvel, use "Importar cópia de segurança".</li>
+ <li><strong>Exportar:</strong> CSV (Excel) e relatório em PDF.</li>
+<li><b>Margem diária:</b> no mês atual, mostra quanto pode gastar por dia até ao fim do mês, a partir do saldo. É um cálculo local.</li>
+<li><b>Aviso de IRS sem NIF:</b> avisa das despesas marcadas para o IRS que não têm NIF do emitente.</li>
+
+</ul>
+<p><strong>Planeado (ainda não disponível):</strong> sincronização na cloud e assistente com IA generativa.</p>
+
+<h2>1. O que a app guarda</h2>
+<ul>
+ <li>Receitas e despesas (valor, categoria, descrição, data).</li>
+ <li>Se ler o QR de uma fatura: o NIF do emitente, o valor e a data. A imagem da câmara não é guardada.</li>
+ <li>O nome e a categoria que der a cada loja (NIF), para os preencher da próxima vez.</li>
+ <li>Metas, orçamentos, registos recorrentes e preferências.</li>
+ <li>Se ativar o PIN, apenas uma marca codificada (hash) do PIN, nunca o PIN em si.</li>
+</ul>
+
+<h2>2. Onde ficam os dados</h2>
+<p>Apenas na memória da app, no seu dispositivo. A PoupaIA não tem conta de utilizador e não envia os seus dados para servidores. A app não pede permissão de Internet, por isso não consegue enviar dados por si própria. Esta versão não tem publicidade nem análise de utilização.</p>
+
+<h2>3. Câmara</h2>
+<p>A câmara só é usada quando toca em "Ler QR da fatura", para ler o código. Nada é gravado nem enviado. Pode retirar a permissão a qualquer momento nas definições do Android e continuar a preencher tudo à mão.</p>
+
+<h2>4. Quando os dados saem do telemóvel</h2>
+<ul>
+ <li>Só quando o utilizador cria uma cópia de segurança, exporta CSV ou PDF, partilha o resumo do IRS ou partilha com a família, e escolhe para onde o enviar.</li>
+ <li>Ao partilhar (por exemplo, pelo WhatsApp), os dados passam a ser tratados pela aplicação escolhida, segundo as regras dela.</li>
+ <li>A cópia automática do Android está desligada para esta app: os dados só saem se fizer uma cópia de segurança.</li>
+</ul>
+
+<h2>5. Assistente</h2>
+<p>O assistente é opcional, pode ser desligado a qualquer momento e funciona apenas no telemóvel, sobre os seus próprios registos. Dá informação indicativa e não é aconselhamento financeiro.</p>
+
+<h2>6. PIN de bloqueio</h2>
+<p>O PIN é opcional e impede que outra pessoa abra a app. Não cifra os ficheiros e não há recuperação: se esquecer o PIN, só apagando os dados volta a usar a app.</p>
+
+<h2>7. Avisos</h2>
+<ul>
+ <li>A PoupaIA é um apoio ao registo e à organização das despesas. Não é aconselhamento financeiro, fiscal, contabilístico ou jurídico.</li>
+ <li>As marcações e os totais para o IRS são uma ajuda pessoal e podem não coincidir com o e-Fatura nem com as regras de dedução em vigor. Confirme sempre no Portal das Finanças.</li>
+ <li>A deteção de subscrições e de lojas é automática e pode errar.</li>
+ <li>A cópia de segurança é da responsabilidade do utilizador. Sem cópia, desinstalar a app ou mudar de telemóvel faz perder os registos.</li>
+</ul>
+
+<h2>8. Os seus direitos</h2>
+<p>Como os dados só existem no seu telemóvel, controla-os por inteiro: pode exportá-los (Definições → Criar cópia de segurança) e apagá-los (Definições → Apagar todos os dados, ou desinstalar a app).</p>
+
+<h2>9. Contacto</h2>
+<p>semprecomigo.app@gmail.com</p>
+</body>
+</html>
